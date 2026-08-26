@@ -35,6 +35,8 @@ for (const file of files) {
 
   const accent = lead.accentColor || '#D6552B'
   const accentDark = lead.accentColorDark || accent
+  const separator = lead.demoUrl.includes('?') ? '&' : '?'
+  const demoUrlWithLead = `${lead.demoUrl}${separator}lead=${encodeURIComponent(slug)}`
 
   let html = template
     .replaceAll('{{ACCENT}}', accent)
@@ -43,7 +45,7 @@ for (const file of files) {
     .replaceAll('{{TAGLINE}}', ogTitle)
     .replaceAll('{{PAIN_POINT}}', escapeHtml(lead.painPoint || ''))
     .replaceAll('{{SERVICES_HTML}}', servicesHtml)
-    .replaceAll('{{DEMO_URL}}', escapeHtml(lead.demoUrl))
+    .replaceAll('{{DEMO_URL}}', escapeHtml(demoUrlWithLead))
     .replaceAll('{{OG_TITLE}}', ogTitle)
     .replaceAll('{{OG_DESCRIPTION}}', ogDescription)
     .replaceAll('{{OG_IMAGE_TAG}}', ogImageTag)
@@ -51,6 +53,14 @@ for (const file of files) {
   const outDir = path.join(distDir, slug)
   fs.mkdirSync(outDir, { recursive: true })
   fs.writeFileSync(path.join(outDir, 'index.html'), html)
+
+  const leadsOutDir = path.join(distDir, 'leads')
+  fs.mkdirSync(leadsOutDir, { recursive: true })
+  fs.writeFileSync(path.join(leadsOutDir, `${slug}.json`), JSON.stringify({
+    businessName: lead.shopName,
+    phone: lead.phone || null,
+  }))
+
   built.push(slug)
 }
 
