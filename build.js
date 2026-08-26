@@ -33,7 +33,12 @@ for (const file of files) {
     ? `<meta property="og:image" content="${escapeHtml(lead.ogImage)}">`
     : ''
 
+  const accent = lead.accentColor || '#D6552B'
+  const accentDark = lead.accentColorDark || accent
+
   let html = template
+    .replaceAll('{{ACCENT}}', accent)
+    .replaceAll('{{ACCENT_DARK}}', accentDark)
     .replaceAll('{{SHOP_NAME}}', escapeHtml(lead.shopName))
     .replaceAll('{{TAGLINE}}', ogTitle)
     .replaceAll('{{PAIN_POINT}}', escapeHtml(lead.painPoint || ''))

@@ -4,9 +4,12 @@
   "tagline": "Custom booking system built around The Lions Den Doggy Daycare",
   "painPoint": "Help organize appointments, fill cancellations, and schedule openings — without you having to catch every call yourself.",
   "services": [
-    { "name": "Grooming appointments", "price": "Book online" },
-    { "name": "Boarding & daycare", "price": "Book online" }
+    { "name": "Half Day Daycare (up to 4 hrs)", "price": "$35" },
+    { "name": "Full Day Daycare (4+ hrs)", "price": "$45" },
+    { "name": "Mobile Grooming", "price": "Book online" }
   ],
   "demoUrl": "https://bookingsystemdemo.pages.dev/",
-  "ogImage": ""
+  "ogImage": "",
+  "accentColor": "#C08A1E",
+  "accentColorDark": "#96690F"
 }
