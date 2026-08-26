@@ -1,0 +1,13 @@
+{
+  "slug": "example",
+  "shopName": "Example Shop",
+  "tagline": "Custom booking system built around Example Shop",
+  "painPoint": "No more missed calls after hours — clients book their own slot, you just show up.",
+  "services": [
+    { "name": "Service One", "price": "$40" },
+    { "name": "Service Two", "price": "$65" },
+    { "name": "Service Three", "price": "$15" }
+  ],
+  "demoUrl": "https://tensedbomsie.github.io/BookingDemoLite/",
+  "ogImage": ""
+}
