@@ -1,0 +1,12 @@
+{
+  "slug": "lions-den",
+  "shopName": "The Lions Den Doggy Daycare",
+  "tagline": "Custom booking system built around The Lions Den Doggy Daycare",
+  "painPoint": "Help organize appointments, fill cancellations, and schedule openings — without you having to catch every call yourself.",
+  "services": [
+    { "name": "Grooming appointments", "price": "Book online" },
+    { "name": "Boarding & daycare", "price": "Book online" }
+  ],
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": ""
+}
