@@ -2,12 +2,12 @@
   "slug": "brooms-over-broome",
   "shopName": "Brooms Over Broome",
   "tagline": "Custom booking system built around Brooms Over Broome",
-  "painPoint": "Handle the routine booking, rescheduling, and cancellation openings automatically — so your team can spend more time on quotes and follow-ups that need a real conversation.",
+  "painPoint": "For clients who already have a set price and schedule, let them reschedule or grab a cancellation opening themselves — so your team's time goes to new quotes and follow-ups instead of re-booking people who already said yes.",
   "services": [
-    { "name": "Recurring House Cleaning", "price": "Get a quote" },
-    { "name": "Deep Cleaning", "price": "Get a quote" },
-    { "name": "Commercial Cleaning", "price": "Get a quote" },
-    { "name": "Window Washing", "price": "Get a quote" }
+    { "name": "Recurring House Cleaning (existing clients)", "price": "Self-serve reschedule" },
+    { "name": "Deep Cleaning (existing clients)", "price": "Self-serve reschedule" },
+    { "name": "Commercial Cleaning (existing clients)", "price": "Self-serve reschedule" },
+    { "name": "New quotes & Window Washing", "price": "Still handled by your team" }
   ],
   "demoUrl": "https://bookingsystemdemo.pages.dev/",
   "ogImage": "",
