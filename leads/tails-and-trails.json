@@ -1,0 +1,24 @@
+{
+  "slug": "tails-and-trails",
+  "shopName": "Tails & Trails Mobile Grooming",
+  "tagline": "Custom booking system built for Tails & Trails Mobile Grooming",
+  "painPoint": "Clients book and confirm their own appointment online. You spend less time on the phone between grooms and more time with the pet in front of you.",
+  "services": [
+    { "name": "Full Grooming", "price": "Self-serve booking" },
+    { "name": "Wash & Blow Dry", "price": "Self-serve booking" },
+    { "name": "Cat Grooming", "price": "Self-serve booking" },
+    { "name": "Nail Clipping", "price": "Self-serve booking" }
+  ],
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "phone": "(937) 303-3785",
+  "demoSubtitle": "Book your mobile grooming appointment with Stacy — pick a time that works for you.",
+  "features": [
+    "Clients pick their own time slot, no phone tag",
+    "One-time cost, no monthly subscription",
+    "Payments collected upfront, no chasing invoices",
+    "You still confirm details by call/text, like you always do"
+  ],
+  "accentColor": "#3D8361",
+  "accentColorDark": "#2A5C43"
+}
