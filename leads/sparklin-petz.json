@@ -2,7 +2,7 @@
   "slug": "sparklin-petz",
   "shopName": "Sparklin' Petz Mobile Grooming Spa",
   "tagline": "Custom booking system built for Sparklin' Petz Mobile Grooming Spa",
-  "painPoint": "Let clients pick and confirm their own appointment slot online — so you're not sending reminder texts by hand or playing phone tag while you're mid-groom with someone else's pet.",
+  "painPoint": "Your clients book and confirm themselves. You stay in the truck.",
   "services": [
     { "name": "Bath and Groom Only", "price": "Self-serve booking" },
     { "name": "Full Grooming", "price": "Self-serve booking" },
