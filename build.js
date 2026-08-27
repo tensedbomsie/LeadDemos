@@ -70,6 +70,7 @@ for (const file of files) {
   fs.writeFileSync(path.join(leadsOutDir, `${slug}.json`), JSON.stringify({
     businessName: lead.shopName,
     phone: lead.phone || null,
+    subtitle: lead.demoSubtitle || null,
   }))
 
   built.push(slug)
