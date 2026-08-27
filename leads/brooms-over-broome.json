@@ -12,6 +12,12 @@
   "demoUrl": "https://bookingsystemdemo.pages.dev/",
   "ogImage": "",
   "phone": "(607) 624-1066",
+  "features": [
+    "Only touches existing clients — new leads still go through your team",
+    "One-time cost, no monthly fee on top of Jobber",
+    "Works alongside Jobber, not instead of it",
+    "No back-and-forth just to move an appointment"
+  ],
   "accentColor": "#C9557C",
   "accentColorDark": "#9E3F60"
 }

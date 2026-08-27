@@ -33,6 +33,16 @@ for (const file of files) {
     ? `<meta property="og:image" content="${escapeHtml(lead.ogImage)}">`
     : ''
 
+  const defaultFeatures = [
+    'Clients book 24/7, no missed calls',
+    'One-time cost, no monthly fee',
+    'You still confirm details by call/text',
+    'Payments land straight in your account',
+  ]
+  const featuresHtml = (lead.features || defaultFeatures)
+    .map(f => `<div class="feature"><span class="dot"></span>${escapeHtml(f)}</div>`)
+    .join('\n      ')
+
   const accent = lead.accentColor || '#D6552B'
   const accentDark = lead.accentColorDark || accent
   const separator = lead.demoUrl.includes('?') ? '&' : '?'
@@ -45,6 +55,7 @@ for (const file of files) {
     .replaceAll('{{TAGLINE}}', ogTitle)
     .replaceAll('{{PAIN_POINT}}', escapeHtml(lead.painPoint || ''))
     .replaceAll('{{SERVICES_HTML}}', servicesHtml)
+    .replaceAll('{{FEATURES_HTML}}', featuresHtml)
     .replaceAll('{{DEMO_URL}}', escapeHtml(demoUrlWithLead))
     .replaceAll('{{OG_TITLE}}', ogTitle)
     .replaceAll('{{OG_DESCRIPTION}}', ogDescription)
