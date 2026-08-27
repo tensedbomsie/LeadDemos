@@ -158,5 +158,20 @@
     <a class="cta" href="{{DEMO_URL}}">View your live demo →</a>
     <p class="footnote">This is a working preview — try booking a slot yourself to see how it feels from your customer's side.</p>
   </div>
+  <script>
+    (function () {
+      try {
+        fetch('https://nxkhmowznezoadiouanl.supabase.co/rest/v1/lead_page_views', {
+          method: 'POST',
+          headers: {
+            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im54a2htb3d6bmV6b2FkaW91YW5sIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ0NTI4MTYsImV4cCI6MjEwMDAyODgxNn0.-g4htzO_POQKTbh0QhhToz7GmxBjjvDtnmNgSlq5nJY',
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify({ slug: '{{SLUG}}', referrer: document.referrer || null })
+        });
+      } catch (e) {}
+    })();
+  </script>
 </body>
 </html>

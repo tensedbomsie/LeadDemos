@@ -49,6 +49,7 @@ for (const file of files) {
   const demoUrlWithLead = `${lead.demoUrl}${separator}lead=${encodeURIComponent(slug)}`
 
   let html = template
+    .replaceAll('{{SLUG}}', escapeHtml(slug))
     .replaceAll('{{ACCENT}}', accent)
     .replaceAll('{{ACCENT_DARK}}', accentDark)
     .replaceAll('{{SHOP_NAME}}', escapeHtml(lead.shopName))
