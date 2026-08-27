@@ -1,0 +1,23 @@
+{
+  "slug": "sparklin-petz",
+  "shopName": "Sparklin' Petz Mobile Grooming Spa",
+  "tagline": "Custom booking system built for Sparklin' Petz Mobile Grooming Spa",
+  "painPoint": "Let clients pick and confirm their own appointment slot online — so you're not sending reminder texts by hand or playing phone tag while you're mid-groom with someone else's pet.",
+  "services": [
+    { "name": "Bath and Groom Only", "price": "Self-serve booking" },
+    { "name": "Full Grooming", "price": "Self-serve booking" },
+    { "name": "Pet Haircut", "price": "Self-serve booking" }
+  ],
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "phone": "(919) 721-2319",
+  "demoSubtitle": "Book your mobile grooming appointment with Tasha — pick a time that works for you.",
+  "features": [
+    "Clients pick their own time slot, no back-and-forth over text",
+    "Automatic reminders sent for you, no need to track confirmations by hand",
+    "One-time cost, no monthly subscription",
+    "You still call/text to confirm details, like you always do"
+  ],
+  "accentColor": "#9B5DE0",
+  "accentColorDark": "#6E3FA3"
+}
