@@ -1,0 +1,23 @@
+{
+  "slug": "dog-gone-problems",
+  "shopName": "Dog Gone Problems",
+  "tagline": "Custom booking system built for Dog Gone Problems",
+  "painPoint": "Let clients grab the first available slot for an in-home session or consultation online — so your new scheduling coordinator's time goes to guiding people to the right service, not repetitive booking calls.",
+  "services": [
+    { "name": "In-Home Training Session", "price": "Self-serve booking" },
+    { "name": "Behavior Consultation", "price": "Self-serve booking" },
+    { "name": "Puppy Classes & Daycare", "price": "Still handled by your team" }
+  ],
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "phone": "(402) 881-0566",
+  "demoSubtitle": "Book your session or consultation with Dog Gone Problems — pick a time that works for you.",
+  "features": [
+    "Clients grab the first open slot themselves, no phone tag",
+    "Frees up your scheduling coordinator for the calls that need a human",
+    "One-time cost, no monthly fee",
+    "Your team still confirms details and coordinates trainers, like always"
+  ],
+  "accentColor": "#E0932E",
+  "accentColorDark": "#A86B1C"
+}
