@@ -8,12 +8,22 @@ const template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8')
 fs.rmSync(distDir, { recursive: true, force: true })
 fs.mkdirSync(distDir, { recursive: true })
 
+const DEFAULT_DEMO_URL = 'https://bookingsystemdemo.pages.dev/'
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
+}
+
+// {{#if NAME}}...{{/if}} — keeps the block when flags[NAME] is truthy, drops it otherwise.
+function applyConditionals(html, flags) {
+  return html.replace(
+    /\{\{#if ([A-Z_]+)\}\}([\s\S]*?)\{\{\/if\}\}/g,
+    (_, name, body) => (flags[name] ? body : '')
+  )
 }
 
 const files = fs.readdirSync(leadsDir).filter(f => f.endsWith('.json'))
@@ -45,10 +55,15 @@ for (const file of files) {
 
   const accent = lead.accentColor || '#D6552B'
   const accentDark = lead.accentColorDark || accent
-  const separator = lead.demoUrl.includes('?') ? '&' : '?'
-  const demoUrlWithLead = `${lead.demoUrl}${separator}lead=${encodeURIComponent(slug)}`
+  let demoUrl = lead.demoUrl
+  if (!demoUrl) {
+    demoUrl = DEFAULT_DEMO_URL
+    console.warn(`[warn] ${file}: missing "demoUrl" — falling back to ${DEFAULT_DEMO_URL}`)
+  }
+  const separator = demoUrl.includes('?') ? '&' : '?'
+  const demoUrlWithLead = `${demoUrl}${separator}lead=${encodeURIComponent(slug)}`
 
-  let html = template
+  let html = applyConditionals(template, { SERVICES_HTML: servicesHtml.trim().length > 0 })
     .replaceAll('{{SLUG}}', escapeHtml(slug))
     .replaceAll('{{ACCENT}}', accent)
     .replaceAll('{{ACCENT_DARK}}', accentDark)

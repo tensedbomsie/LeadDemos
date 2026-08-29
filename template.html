@@ -146,10 +146,12 @@
     <h1>A booking system made specifically for <span>{{SHOP_NAME}}</span></h1>
     <p class="pain-point">{{PAIN_POINT}}</p>
 
+{{#if SERVICES_HTML}}
     <div class="card">
       <h2>Your services</h2>
       {{SERVICES_HTML}}
     </div>
+{{/if}}
 
     <div class="features">
       {{FEATURES_HTML}}
