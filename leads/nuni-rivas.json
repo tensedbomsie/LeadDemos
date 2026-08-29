@@ -1,0 +1,17 @@
+{
+  "slug": "nuni-rivas",
+  "shopName": "Nuni",
+  "tagline": "A simple booking page for Nuni's cleaning business",
+  "painPoint": "You said it yourself — the business grew past what pen and paper can track. This hands the tracking part to clients: they pick their own slot, it lands on your calendar, done.",
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "demoSubtitle": "Built for Nuni — clients pick a time that works for them, no more digging through the notebook.",
+  "features": [
+    "Clients grab their own open slot online, no back-and-forth texting",
+    "Every booking lands in one place automatically, no more paper to lose track of",
+    "One-time cost, no monthly subscription stacked on top of everything else",
+    "You still confirm details and handle the job the same way you always have"
+  ],
+  "accentColor": "#0E9F6E",
+  "accentColorDark": "#0B7A56"
+}
