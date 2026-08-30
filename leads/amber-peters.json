@@ -1,0 +1,17 @@
+{
+  "slug": "amber-peters",
+  "shopName": "Amber",
+  "tagline": "A simple booking page for Amber's lawn care business",
+  "painPoint": "You said it yourself — chasing one client for almost a week for payment, wondering if it's worth the reliability hit to keep her. This flips the order: clients pay when they book the cut, so there's nothing left to chase afterward.",
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "demoSubtitle": "Built for Amber — clients pay when they book, so a slow payer never turns into a week of chasing calls and texts.",
+  "features": [
+    "Payment collected upfront at booking, before the mow ever happens",
+    "No more calls and texts just to get paid for work already done",
+    "One-time cost, no monthly subscription stacked on top",
+    "You still run the job the same way, just don't have to chase money anymore"
+  ],
+  "accentColor": "#3F8B4C",
+  "accentColorDark": "#2C6339"
+}
