@@ -1,0 +1,24 @@
+{
+  "slug": "velvet-cleaning-co",
+  "shopName": "Velvet Cleaning Co.",
+  "tagline": "Custom booking system built around Velvet Cleaning Co.",
+  "painPoint": "You said it yourself — you're tired of having to chase payment down after the job's already done. This flips the order: clients pay when they book, so the cancellation and late-payment headaches never get a chance to start.",
+  "services": [
+    { "name": "Weekly Cleaning", "price": "Pay at booking" },
+    { "name": "Bi-Weekly Cleaning", "price": "Pay at booking" },
+    { "name": "Deep Cleans", "price": "Pay at booking" },
+    { "name": "Move-In / Move-Out Cleans", "price": "Pay at booking" },
+    { "name": "Post-Construction Cleans", "price": "Pay at booking" }
+  ],
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "demoSubtitle": "Clients pay when they book — no more last-minute cancellations costing you the slot, no more chasing anyone afterward.",
+  "features": [
+    "Payment collected upfront at booking, before the job ever starts",
+    "Cancellation policy enforces itself — no awkward conversations needed",
+    "Every booking lands in one calendar, no double-checking texts and DMs",
+    "One-time cost, no monthly fee stacked on top of what you already use"
+  ],
+  "accentColor": "#8B5FBF",
+  "accentColorDark": "#5F3D8A"
+}
