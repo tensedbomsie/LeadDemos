@@ -1,0 +1,17 @@
+{
+  "slug": "cassandra-einstein",
+  "shopName": "Cassandra",
+  "tagline": "A simple booking page for Cassandra's cleaning business",
+  "painPoint": "You said it yourself — first time dealing with a client who didn't pay after a full move-in deep clean, no answer on where the $485 went. This flips the order: clients pay when they book the clean, so there's nothing left to chase afterward.",
+  "demoUrl": "https://bookingsystemdemo.pages.dev/",
+  "ogImage": "",
+  "demoSubtitle": "Built for Cassandra — clients pay when they book, so a finished job never turns into an awkward chase for payment.",
+  "features": [
+    "Payment collected upfront at booking, before the clean ever happens",
+    "No more wondering if a completed job will actually get paid for",
+    "One-time cost, no monthly subscription stacked on top",
+    "You still run the job the same way, just don't have to chase money anymore"
+  ],
+  "accentColor": "#2E86AB",
+  "accentColorDark": "#1F5F7A"
+}
